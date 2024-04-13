@@ -1,11 +1,10 @@
+import json
 import os
 import posixpath
 import time
 
 import requests
-import json
 from bs4 import BeautifulSoup
-from concurrent.futures import ProcessPoolExecutor
 
 
 def _parse_html(html):
