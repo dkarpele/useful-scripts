@@ -60,4 +60,4 @@ jobs:
           python3 -m pip install -r ./simple_web_scraping/requirements.txt
       - name: Check src
         run: |
-          mypy ./simple_web_scraping/get_content_async.py
+          mypy ./simple_web_scraping/get_content_async.py ./average_value/
