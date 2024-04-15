@@ -1,7 +1,7 @@
 import itertools
 
 summ = 0
-id_generator = itertools.count(1)
+counter = itertools.count(1)
 
 
 def average_global_var(value: int) -> float:
@@ -12,7 +12,7 @@ def average_global_var(value: int) -> float:
     """
     global summ
     summ += value
-    return summ / next(id_generator)
+    return summ / next(counter)
 
 
 print(average_global_var(1))
