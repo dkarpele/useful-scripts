@@ -17,3 +17,8 @@ repos:
     hooks:
     -   id: mypy
         exclude: ^(simple_web_scraping/get_content_sync.py/)
+
+        entry: |
+          python -m pip install --upgrade pip
+          pip install mypy
+          python3 -m pip install -r ./simple_web_scraping/requirements.txt
